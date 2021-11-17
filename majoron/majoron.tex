@@ -2,15 +2,16 @@
 \usetheme{Warsaw}
 \usepackage[utf8]{inputenc}
 \usepackage[]{babel}
-\usepackage{amsmath}
-\usepackage{amsfonts}
-\usepackage{amssymb}
-\usepackage{graphicx}
 \author{翁俊}
-\title{Majoron 学习理解第一次汇报}
+\title{Majoron 理论模型及实验探测}
+\usepackage{xunicode}
+\usepackage{xltxtra}
 \usepackage{xeCJK}
 \usepackage{ctex}
-\usepackage{mathrsfs}
+\usepackage{polyglossia}
+\setdefaultlanguage{english}
+\usepackage{indentfirst}
+\setlength{\parindent}{2em}%中文缩进两个汉字位
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
@@ -21,6 +22,8 @@
 \usepackage{hyperref}
 \usepackage{amsmath}
  \usepackage{siunitx}
+\usepackage{geometry}
+\usepackage{mathrsfs}
 %\setbeamercovered{transparent} 
 %\setbeamertemplate{navigation symbols}{} 
 %\logo{} 
@@ -53,15 +56,16 @@
 
 \begin{frame}{右手中微子模型中的Majoron}
 自旋为0的规范单态场S与Yukawa耦合后：
+
 $$
 -\mathscr{L}_{Y}^{\prime}=\sum_{\ell, \ell^{\prime}} b_{\ell \ell^{\prime}} \overline{\widehat{N}}_{\ell L} N_{\ell^{\prime} \mathrm{R}} S+\text { h.c. }
 $$
+
 在标量势中，将B-L破坏的项去掉以后，B-L是global对称的。
 
 S带有量子数，当真空期望值$<S>\neq 0$时，B-L对称性破缺，也就产生了Majoron。
 
 S是复数形式的场，实部是其真空期望值，虚部则是Majoron。
-
 
 
 \end{frame}
@@ -136,4 +140,30 @@ $}
 \item {。。。}
 \end{enumerate}
 \end{frame}
+
+\begin{frame}{Majoron实验探测}
+Majoron实验探测主要有三种探测方式
+\begin{enumerate}
+\item {天体物理通过行星光度分析能量发射}
+\item {介子衰变：kaon，muon...}
+\item {通过双$\beta$衰变能谱拟合}
+\end{enumerate}
+本次调研学习主要关心后两者的实验现象。
+\end{frame}
+
+\begin{frame}{介子衰变的实验观测}
+
+\end{frame}
+
+\begin{frame}{$2\beta$衰变实验观测}
+\begin{figure}[H]
+ \centering
+ \includegraphics[height=5cm]{pic/2nubeta.pdf}
+ \caption{双$\beta$衰变的三种模式，主要包含了双中微子双$\beta$衰变、无中微子双$\beta$衰变、以及无中微子双$\beta$衰变伴随一个Majoron发射\cite{Gomez-Cadenas:2015twa}}
+ \label{fig:2nubeta}
+\end{figure}
+\end{frame}
+
+\bibliographystyle{unsrt}
+\bibliography{ref.bib}
 \end{document}
